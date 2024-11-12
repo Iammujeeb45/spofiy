@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>spotify-web player:Music for everyone</title>
+    <link
+      rel="shortcut icon"
+      href="https://miro.medium.com/v2/resize:fit:1024/1*7FZtmt84U89UWq98JjM0SA.png"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- main header -->
+    <header class="w-full h-16 bg-black">
+      <!-- main div in header part -->
+      <div class="flex text-white items-center justify-between">
+        <!-- right div in header part -->
+        <div class="flex justift-center">
+          <img
+            class="w-10 h-10 bg-white mt-2 ml-4"
+            src="https://static.vecteezy.com/system/resources/previews/023/986/728/non_2x/spotify-logo-spotify-logo-transparent-spotify-icon-transparent-free-free-png.png"
+          />
+        </div>
+        <!-- middle div in header part -->
+        <div class="flex items-center pt-3">
+          <div class="flex items-center gap-2">
+            <button
+              class="pr-2 w-8 pl-1 rounded-full h-8 bg-black flex items-center hover:bg-gray-100"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                ˀ
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                />
+              </svg>
+            </button>
+            <div class="flex items-center rounded-full bg-black gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                />
+              </svg>
+
+              <input
+                class="w-[400px] h-10 flex rounded-full pl-4"
+                type="text"
+                placeholder="what do want to play? "
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m20.893 13.393-1.135-1.135a2.252 2.252 0 0 1-.421-.585l-1.08-2.16a.414.414 0 0 0-.663-.107.827.827 0 0 1-.812.21l-1.273-.363a.89.89 0 0 0-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 0 1-1.81 1.025 1.055 1.055 0 0 1-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 0 1-1.383-2.46l.007-.042a2.25 2.25 0 0 1 .29-.787l.09-.15a2.25 2.25 0 0 1 2.37-1.048l1.178.236a1.125 1.125 0 0 0 1.302-.795l.208-.73a1.125 1.125 0 0 0-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 0 1-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 0 1-1.458-1.137l1.411-2.353a2.25 2.25 0 0 0 .286-.76m11.928 9.869A9 9 0 0 0 8.965 3.525m11.928 9.868A9 9 0 1 1 8.965 3.525"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- right div -->
+        <div class="flex gap-4 pr-5">
+          Signup
+          <span class="bg-white w-10 h-6 text-black rounded-full">login</span>
+        </div>
+      </div>
+    </header>
+    <!-- side bar main section -->
+    <section class="flex">
+      <!-- main div in sidebar section -->
+      <div class="w-1/4 h-screen bg-black text-white">
+        <!-- first div in sidebar -->
+        <div class="flex justify-between pl-3 pt-3 text-xl">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z"
+            />
+          </svg>
+          Your Library
+          <div class="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 4.5v15m7.5-7.5h-15"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          class="w-[430px] bg-gray-500 h-32 mt-10 rounded-l-lg rounded-r-lg flex-col"
+        >
+          <p class="ml-4 font-bold text-black text-xl">create playlists</p>
+          <p class="ml-4 text-black text-xs">
+            it's a easy ,we'll help yuh to learn
+          </p>
+          <button class="ml-8 mt-8 rounded-full bg-black text-white text-xs">
+            create playlists
+          </button>
+        </div>
+
+        <div
+          class="w-[430px] bg-gray-500 h-32 mt-8 rounded-l-lg rounded-r-lg flex-col"
+        >
+          <p class="ml-4 font-bold text-black text-xl">
+            lets find some podcasts to follow
+          </p>
+          <p class="ml-4 text-black text-xs">
+            we'll keep you updated on new eposoides
+          </p>
+          <button class="mt-8 ml-6 rounded-full bg-black text-white">
+            Browse procasts
+          </button>
+        </div>
+      </div>
+      <header class="flex w-3/4 h-12 bg-black flex-col">
+        <p class="text-2xl font-bold flex items-center text-white">
+          Featured Charts
+        </p>
+
+        <div class="flex flex-wrap">
+          <!-- cart first div -->
+          <div
+            class="w-60 h-72 bg-black flex items-center mt-7 ml-5 flex-col rounded-lg transition transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:bg duration-300"
+          >
+            <img
+              class="w-fit rounded-lg"
+              src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da848af74f0c3a3fe4a49a7d8487"
+            />
+            <div class="text-xs text-white ml-2">
+              your weekly updated most played lists right now
+            </div>
+          </div>
+          <div
+            class="w-60 h-72 bg-black flex items-center mt-7 ml-5 flex-col rounded-lg transition transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:bg duration-300"
+          >
+            <img
+              class="w-fit rounded-lg"
+              src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_be_default.jpg"
+            />
+            <div class="text-xs text-white ml-2">
+              your weekly updated most played lists right now
+            </div>
+          </div>
+          <div
+            class="w-60 h-72 bg-black flex items-center mt-7 ml-5 flex-col rounded-lg transition transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:bg duration-300"
+          >
+            <img
+              class="w-fit rounded-lg"
+              src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_ie_default.jpg"
+            />
+            <div class="text-xs text-white ml-2">
+              your weekly updated most played lists right now
+            </div>
+          </div>
+          <div
+            class="w-60 h-72 bg-black flex items-center mt-7 ml-5 flex-col rounded-lg transition transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:bg duration-300"
+          >
+            <img
+              class="w-fit rounded-lg"
+              src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da843dc205f82068e47205a1f3b9"
+            />
+            <div class="text-xs text-white ml-2">
+              your weekly updated most played lists right now
+            </div>
+          </div>
+          <div
+            class="w-60 h-72 bg-black flex items-center mt-7 ml-5 flex-col rounded-lg transition transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:bg duration-300"
+          >
+            <img
+              class="w-fit rounded-lg"
+              src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg"
+            />
+            <div class="text-xs text-white ml-2">
+              your weekly updated most played lists right now
+            </div>
+          </div>
+          <p class="font-classic text-2xl mt-3 ml-3">playlists from editors</p>
+        </div>
+        <div class="flex flex-wrap">
+          <div
+            class="w-60 h-72 bg-black flex items-center mt-7 ml-5 flex-col rounded-lg transition transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:bg duration-300"
+          >
+            <img
+              class="w-fit rounded-lg"
+              src="https://i.scdn.co/image/ab67616d00001e0258eca8b7c3db3db0267a4445"
+            />
+            <div class="text-xs text-white">pop.cover:LOla Young</div>
+          </div>
+          <div
+            class="w-60 h-72 bg-black flex items-center mt-7 ml-5 flex-col rounded-lg transition transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:bg duration-300"
+          >
+            <img
+              class="w-fit rounded-lg"
+              src="https://i.scdn.co/image/ab67706f00000002472120b92edea982b5feb264"
+            />
+            <div class="text-xs ml-2 text-white">
+              Soft instrumental Jazz for all your activities.
+            </div>
+          </div>
+          <div
+            class="w-60 h-72 bg-black flex items-center mt-7 ml-5 flex-col rounded-lg transition transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:bg duration-300"
+          >
+            <img
+              class="w-fit rounded-lg"
+              src="https://i.scdn.co/image/ab67706f0000000283da657fca565320e9311863"
+            />
+            <div class="text-xs ml-2 text-white">
+              Playlist Peaceful piano to help you slow down, breathe, and relax.
+            </div>
+          </div>
+          <div
+            class="w-60 h-72 bg-black flex items-center mt-7 ml-5 flex-col rounded-lg transition transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:bg duration-300"
+          >
+            <img
+              class="w-fit rounded-lg"
+              src="https://i.scdn.co/image/ab67706f0000000255be59b7be2929112e7ac927"
+            />
+            <div class="text-xs text-white ml-2">
+              Playlist chill beats, lofi vibes, new tracks every week...
+            </div>
+          </div>
+          <div
+            class="w-60 h-72 bg-black flex items-center mt-7 ml-5 flex-col rounded-lg transition transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:bg duration-300"
+          >
+            <img
+              class="w-fit rounded-lg"
+              src="https://i.scdn.co/image/ab67706f00000002c900fae23e2a3cf42b0e1556"
+            />
+            <div class="text-xs text-white ml-2">
+              The biggest songs of the 2000s. Cover: The Killers
+            </div>
+          </div>
+          <div class="flex justify-between items-center mt-10 gap-20">
+            <div class="ml-3">
+              <span class="font-bold ml-3">company</span>
+              <ul class="ml-3">
+                <li>About</li>
+                <li>jobs</li>
+                <li>For The Record</li>
+              </ul>
+            </div>
+            <div class="ml-3 mt-9">
+              <span class="font-bold ml-3">communities</span>
+              <ul class="ml-3">
+                <li>For Arsits</li>
+                <li>Developers</li>
+                <li>Advertsing</li>
+                <li>Investors</li>
+              </ul>
+            </div>
+            <div class="ml-3">
+              <span class="font-bold ml-3">useful links</span>
+              <ul class="ml-3">
+                <li>support</li>
+                <li>Free mobile App</li>
+              </ul>
+            </div>
+            <div class="ml-3 mt-6">
+              <span class="font-bold ml-3">spofity plans</span>
+              <ul class="ml-3">
+                <li>premium individual</li>
+                <li>premium duo</li>
+                <li>premium family</li>
+                <li>premium student</li>
+                <li>spofity free</li>
+              </ul>
+            </div>
+            <div class="flex items-center">
+              <button class="flex gap-5 ml-6">
+                <img
+                  class="w-8 h-8"
+                  src="https://icons.veryicon.com/png/o/miscellaneous/offerino-icons/instagram-53.png"
+                />
+                <img
+                  class="w-8 h-8"
+                  src="https://w7.pngwing.com/pngs/515/1/png-transparent-twitter-logo-computer-icons-logo-twitter-icon-computer-wallpaper-monochrome-bird-thumbnail.png"
+                />
+                <img
+                  class="w-8 h-8"
+                  src="https://w7.pngwing.com/pngs/806/294/png-transparent-facebook-logo-logo-facebook-icon-facebook-logo-brand-social-network-scalable-vector-graphics.png"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+    </section>
+    <footer class="w-full h-20 bg-purple-700">
+      <div class="flex justify-between text-white items-center">
+        <span class="font-bold text-xl mt-3 ml-3">preview of spofity</span>
+        <button class="mt-3 mr-4 h-14 w-22 bg-gray-500 rounded-full">
+          SINGUP FOR FREE
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>
